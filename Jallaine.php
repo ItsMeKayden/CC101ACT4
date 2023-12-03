@@ -11,7 +11,7 @@ session_start();
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="Liezette.php" method="post">
+<form action="logout.php" method="post">
                     <input type="submit" name="logout" value="Logout" id="logout">
                   </form>
             <div class="container-info">
@@ -58,12 +58,3 @@ session_start();
             </section>
 </body>
 </html>
-
-<?php 
-
-       if(isset($_POST["logout"])){
-        session_destroy();
-        header("Location: main.php");
-       }
-
-?>
