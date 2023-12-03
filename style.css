@@ -1,0 +1,128 @@
+body{
+    background: linear-gradient(to bottom, #999966 0%, #ffffff 100%);
+}
+
+.container-info{
+    display: flex;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65rem;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 210px;
+    box-shadow: 3px 3px 10px 3px #8A663F;
+    background: linear-gradient(to bottom, #999966 0%, #ffffff 100%);
+    border-radius: 20px;
+}
+
+.info{
+    display: flex;
+}
+
+.info-text{
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10px;
+    padding-right: 90px;
+    font-size: 19px;
+    margin-left: 20px;
+    margin-top: 30px;
+    cursor: default;
+}
+
+a{
+    cursor: default;
+}
+
+.info-text h2{
+    font-weight: lighter;
+    margin-bottom: -20px;
+}
+
+.pic{
+    border: 1px solid #8A663F;
+    width: 300px;
+    height: auto;
+    float: left;
+    border-radius: 20px;
+}
+
+#logout{
+    left: 68rem;
+    background: linear-gradient(to bottom, #999966 0%, #ffffff 100%);
+    width: 90px;
+    height:30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.6s, ease-in-out;
+}
+
+#logout:hover{
+    opacity: 0.7;
+}
+
+.morebtn{
+    background: linear-gradient(to bottom, #999966 0%, #ffffff 100%);
+    color: black;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*More about this person*/
+
+#more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.title{
+    background-color: #999966;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.more-content{
+    box-shadow: 3px 3px 10px 3px #8A663F;
+    background: linear-gradient(to bottom, #999966 0%, #ffffff 100%);
+    border-radius: 30px;
+    text-align: center;
+    width: 35rem;
+    height: 45rem;
+}
+
+.moretxt, .hobbies{
+    font-size: 21px;
+}
+
+@media (max-width: 320px) {
+    .pic{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container-info {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .more-content{
+        flex-direction: column;
+        width: 100%;
+    }
+}
